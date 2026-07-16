@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Photos, Your Story — The Art of Remembering · Bespoke photo books, Bowral NSW</title>
+<meta name="description" content="The art of remembering. The photographs tucked away in your boxes and albums — digitised, restored, and bound into one beautiful book to live with and hand down. One project at a time, Bowral NSW, clients Australia-wide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #FBF7EF; color: #2C2418; font-family: 'Source Serif 4', Georgia, serif; -webkit-font-smoothing: antialiased; }
+  a { color: #7A3B2E; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:hover { color: #4B2118; }
+  input, select, textarea, button { font: inherit; color: inherit; }
+  h1, h2, h3 { text-wrap: balance; }
+  p { text-wrap: pretty; }
+  summary::marker { color: #9C7A3F; }
+  img { display: block; }
+
+  .wrap { max-width: 1320px; margin: 0 auto; padding: 120px 40px; }
+  .wrap-hero-top { max-width: 1320px; margin: 0 auto; padding: 72px 40px 0; }
+  .wrap-hero-bottom { max-width: 1320px; margin: 0 auto; padding: 88px 40px 96px; }
+  .wrap-words { max-width: 1320px; margin: 0 auto; padding: 110px 40px; }
+  .wrap-footer { max-width: 1320px; margin: 0 auto; padding: 64px 40px 48px; }
+  .headbar { max-width: 1320px; margin: 0 auto; padding: 0 40px; min-height: 78px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+
+  .btn:hover { background: #5E2B21 !important; }
+  .nav-a:hover { color: #7A3B2E !important; text-decoration: underline; text-underline-offset: 4px; }
+  .plink:hover { color: #7A3B2E !important; }
+  .flink:hover { color: #FFFFFF !important; }
+  form input:focus, form select:focus, form textarea:focus { border-color: #7A3B2E !important; box-shadow: 0 0 0 3px rgba(122,59,46,0.14); outline: none; }
+
+  .slot { position: absolute; inset: 0; }
+  .slot img { width: 100%; height: 100%; object-fit: cover; }
+  .ph { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; box-sizing: border-box; background: #EAE1CC; }
+  .ph span { font-style: italic; font-size: 15px; line-height: 1.5; color: #8C7A5C; max-width: 26ch; }
+  .ph::after { content: ""; position: absolute; inset: 10px; border: 1px dashed rgba(140,122,92,0.45); pointer-events: none; }
+
+  .before-img { filter: sepia(0.45) saturate(0.55) contrast(0.72) brightness(0.92); }
+  .before-cast { filter: sepia(0.35) hue-rotate(-18deg) saturate(1.25) contrast(0.82) brightness(1.05); }
+  .before-faded { filter: sepia(0.5) contrast(0.6) brightness(1.06) saturate(0.7); }
+  .before-wear { position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(84,66,40,0.35) 100%),
+      linear-gradient(115deg, rgba(255,255,255,0) 42%, rgba(255,255,255,0.35) 43%, rgba(255,255,255,0) 44%),
+      linear-gradient(80deg, rgba(255,255,255,0) 68%, rgba(255,255,255,0.28) 69%, rgba(255,255,255,0) 70%),
+      linear-gradient(0deg, rgba(120,90,50,0.12), rgba(120,90,50,0.12)); }
+
+  .hero-img-box { position: relative; height: clamp(520px, 74vh, 740px); background: #EAE1CC; box-shadow: 0 30px 60px -34px rgba(44,36,24,0.4); }
+
+  @media (max-width: 940px) {
+    .wrap { padding: 72px 22px; }
+    .wrap-hero-top { padding: 44px 22px 0; }
+    .wrap-hero-bottom { padding: 48px 22px 64px; }
+    .wrap-words { padding: 72px 22px; }
+    .wrap-footer { padding: 48px 22px 36px; }
+    .headbar { padding: 10px 18px; gap: 14px; }
+    .nav-main { display: none !important; }
+    .split { grid-template-columns: 1fr !important; gap: 44px !important; }
+    .hero-img-box { height: clamp(360px, 55vh, 480px); }
+  }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(251,247,239,0.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(44,36,24,0.16);">
+  <div class="headbar">
+    <a href="#top" style="text-decoration:none;color:#2C2418;font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;font-weight:600;white-space:nowrap;">Your Photos, <span style="font-style:italic;color:#7A3B2E;">Your Story</span></a>
+    <nav class="nav-main" style="display:flex;gap:24px;flex:1 1 auto;min-width:max-content;justify-content:center;">
+      <a class="nav-a" href="#service" style="text-decoration:none;color:#2C2418;font-size:16.5px;white-space:nowrap;">The Service</a>
+      <a class="nav-a" href="#restoration" style="text-decoration:none;color:#2C2418;font-size:16.5px;white-space:nowrap;">Before &amp; After</a>
+      <a class="nav-a" href="#process" style="text-decoration:none;color:#2C2418;font-size:16.5px;white-space:nowrap;">How It Works</a>
+      <a class="nav-a" href="#pricing" style="text-decoration:none;color:#2C2418;font-size:16.5px;white-space:nowrap;">Pricing</a>
+      <a class="nav-a" href="#about" style="text-decoration:none;color:#2C2418;font-size:16.5px;white-space:nowrap;">About</a>
+      <a class="nav-a" href="#faq" style="text-decoration:none;color:#2C2418;font-size:16.5px;white-space:nowrap;">FAQ</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:22px;">
+      <!-- ⚠️ NUMÉRO À CONFIRMER avec Kalimna -->
+      <a class="plink" href="tel:+61412731968" style="text-decoration:none;color:#2C2418;font-size:17px;font-weight:600;white-space:nowrap;">Call 0412 731 968</a>
+      <a class="btn" href="#enquire" style="text-decoration:none;background:#7A3B2E;color:#FBF7EF;font-size:16.5px;font-weight:600;padding:12px 24px;border-radius:3px;white-space:nowrap;">Enquire</a>
+    </div>
+  </div>
+</header>
+
+<main id="top" style="scroll-margin-top:90px;">
+
+  <!-- ======================= HERO ======================= -->
+  <section style="background:#FBF7EF;">
+    <div class="wrap-hero-top split" style="display:grid;grid-template-columns:minmax(0,0.95fr) minmax(0,1.05fr);gap:64px;align-items:center;">
+      <div style="padding:48px 0;">
+        <p style="margin:0;font-size:13.5px;letter-spacing:0.22em;text-transform:uppercase;color:#7A3B2E;font-weight:600;">The art of remembering &middot; Bowral NSW</p>
+        <h1 style="margin:24px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(34px,3.4vw,44px);line-height:1.12;letter-spacing:-0.005em;">A lifetime of photographs,<br>bound into one beautiful book.</h1>
+        <p style="margin:26px 0 0;font-size:20px;line-height:1.6;color:#635746;max-width:44ch;">The photographs tucked away in boxes and albums — digitised, restored, and woven together with your words, so your family can finally live with them.</p>
+        <div style="margin-top:40px;display:flex;align-items:center;gap:26px;flex-wrap:wrap;">
+          <a class="btn" href="#enquire" style="text-decoration:none;background:#7A3B2E;color:#FBF7EF;font-size:19px;font-weight:600;padding:19px 38px;border-radius:3px;">Start your enquiry</a>
+          <p style="margin:0;font-size:18px;color:#635746;">or call <a href="tel:+61412731968" style="font-weight:600;">0412 731 968</a></p>
+        </div>
+        <p style="margin:52px 0 0;font-size:13.5px;letter-spacing:0.18em;text-transform:uppercase;color:#9C7A3F;font-weight:600;">One project at a time &nbsp;&middot;&nbsp; Originals returned safely &nbsp;&middot;&nbsp; Your date, honoured</p>
+      </div>
+      <figure style="margin:0;">
+        <div class="hero-img-box">
+          <div class="slot"><img src="images/hero-recognition.jpg" alt="An elderly hand resting on the open page of a finished photo book, touching a restored wedding photograph"></div>
+        </div>
+      </figure>
+    </div>
+    <div class="wrap-hero-bottom">
+      <h2 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(32px,3.2vw,50px);line-height:1.1;text-align:center;">Made for the big days.</h2>
+      <div style="margin-top:60px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:28px;">
+        <!-- ⚠️ Visuels temporaires générés -->
+        <div>
+          <div style="position:relative;aspect-ratio:4/3;background:#EAE1CC;overflow:hidden;">
+            <div class="slot"><img src="images/occ-birthday.jpg" alt="An 80th birthday — the open book beside the cake as he laughs"></div>
+          </div>
+          <h3 style="margin:18px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;">An 80th birthday</h3>
+          <p style="margin:8px 0 0;font-size:16.5px;line-height:1.6;color:#635746;">Eighty years in his hands, before the cake is even cut.</p>
+        </div>
+        <div>
+          <div style="position:relative;aspect-ratio:4/3;background:#EAE1CC;overflow:hidden;">
+            <div class="slot"><img src="images/occ-anniversary.jpg" alt="A golden anniversary — the couple reading their wedding album, reborn"></div>
+          </div>
+          <h3 style="margin:18px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;">A golden anniversary</h3>
+          <p style="margin:8px 0 0;font-size:16.5px;line-height:1.6;color:#635746;">The wedding album, reborn fifty years on.</p>
+        </div>
+        <div>
+          <div style="position:relative;aspect-ratio:4/3;background:#EAE1CC;overflow:hidden;">
+            <div class="slot"><img src="images/occ-christmas.jpg" alt="Christmas morning — unwrapping the linen book at the summer lunch table"></div>
+          </div>
+          <h3 style="margin:18px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;">Christmas morning</h3>
+          <p style="margin:8px 0 0;font-size:16.5px;line-height:1.6;color:#635746;">The one present everyone wants opened first.</p>
+        </div>
+      </div>
+      <p style="margin:56px 0 0;text-align:center;font-size:18.5px;font-style:italic;color:#635746;">Working towards a date? Tell me early — one project at a time, and your date is honoured.</p>
+    </div>
+  </section>
+
+  <!-- ======================= I. THE SERVICE ======================= -->
+  <section id="service" style="background:#F3ECDD;scroll-margin-top:90px;">
+    <div class="wrap">
+      <div class="split" style="display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,0.85fr);gap:88px;align-items:center;">
+        <div>
+          <div style="display:flex;align-items:center;gap:16px;">
+            <span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:23px;color:#9C7A3F;">I.</span>
+            <span style="font-size:13.5px;letter-spacing:0.22em;text-transform:uppercase;color:#7A3B2E;font-weight:600;">The Service</span>
+            <span style="flex:1;height:1px;background:rgba(44,36,24,0.16);"></span>
+          </div>
+          <h2 style="margin:26px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(36px,3.4vw,52px);line-height:1.07;">From boxes of photographs to a book that tells your story.</h2>
+          <p style="margin:22px 0 0;font-size:19px;line-height:1.6;color:#635746;max-width:56ch;">Your own lifetime of photographs, or a collection you've inherited — they shouldn't stay in storage. A beautiful book to live with, and a digital archive the whole family shares — now, and for the generations to come.</p>
+          <div style="margin-top:52px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:36px 44px;">
+            <div>
+              <p style="margin:0;font-size:13.5px;letter-spacing:0.2em;color:#9C7A3F;font-weight:600;">01</p>
+              <h3 style="margin:10px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;">Digitise</h3>
+              <p style="margin:8px 0 0;font-size:16.5px;line-height:1.6;color:#635746;">Every format, scanned individually at archival quality.</p>
+            </div>
+            <div>
+              <p style="margin:0;font-size:13.5px;letter-spacing:0.2em;color:#9C7A3F;font-weight:600;">02</p>
+              <h3 style="margin:10px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;">Restore</h3>
+              <p style="margin:8px 0 0;font-size:16.5px;line-height:1.6;color:#635746;">Damage undone digitally — originals never altered.</p>
+            </div>
+            <div>
+              <p style="margin:0;font-size:13.5px;letter-spacing:0.2em;color:#9C7A3F;font-weight:600;">03</p>
+              <h3 style="margin:10px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;">Curate</h3>
+              <p style="margin:8px 0 0;font-size:16.5px;line-height:1.6;color:#635746;">The photographs that print beautifully and carry the story.</p>
+            </div>
+            <div>
+              <p style="margin:0;font-size:13.5px;letter-spacing:0.2em;color:#9C7A3F;font-weight:600;">04</p>
+              <h3 style="margin:10px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;">Your words</h3>
+              <p style="margin:8px 0 0;font-size:16.5px;line-height:1.6;color:#635746;">Your captions and memories, set exactly where they belong.</p>
+            </div>
+          </div>
+          <p style="margin:48px 0 0;font-size:16.5px;font-style:italic;color:#635746;">No photo shoots, no family-tree research, no apps — one thing, done properly.</p>
+        </div>
+        <figure style="margin:0;">
+          <div style="background:#FFFDF8;border:1px solid rgba(44,36,24,0.16);padding:12px;box-shadow:0 26px 52px -30px rgba(44,36,24,0.38);">
+            <div style="position:relative;aspect-ratio:3/4;background:#EAE1CC;">
+              <div class="slot"><img src="images/shoebox.jpg" alt="A box of old prints, negatives and slides, ready to be sorted"></div>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= II. THE RESTORATION ======================= -->
+  <section id="restoration" style="background:#FBF7EF;scroll-margin-top:90px;">
+    <div class="wrap">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:23px;color:#9C7A3F;">II.</span>
+        <span style="font-size:13.5px;letter-spacing:0.22em;text-transform:uppercase;color:#7A3B2E;font-weight:600;">The Restoration</span>
+        <span style="flex:1;height:1px;background:rgba(44,36,24,0.16);"></span>
+      </div>
+      <h2 style="margin:26px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(36px,3.4vw,52px);line-height:1.07;max-width:24ch;">Photographs you thought were lost, brought back.</h2>
+      <p style="margin:22px 0 0;font-size:19px;line-height:1.6;color:#635746;max-width:64ch;">Fading, stains, tears, mould — undone on the digital copy, without ever touching the original.</p>
+
+      <!-- ⚠️ Paire 1 = démo CSS sur la même image ; remplacer par les vrais avant/après de Kalimna -->
+      <figure style="margin:64px 0 0;background:#FFFDF8;border:1px solid rgba(44,36,24,0.16);padding:24px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+          <div>
+            <p style="margin:0;font-size:13px;letter-spacing:0.2em;text-transform:uppercase;color:#635746;font-weight:600;">Before</p>
+            <div style="position:relative;aspect-ratio:4/3;margin-top:10px;background:#EAE1CC;overflow:hidden;">
+              <div class="slot"><img class="before-img" src="images/family-veranda.jpg" alt="The damaged original — faded, stained, worn"><div class="before-wear"></div></div>
+            </div>
+          </div>
+          <div>
+            <p style="margin:0;font-size:13px;letter-spacing:0.2em;text-transform:uppercase;color:#7A3B2E;font-weight:600;">After</p>
+            <div style="position:relative;aspect-ratio:4/3;margin-top:10px;background:#EAE1CC;">
+              <div class="slot"><img src="images/family-veranda.jpg" alt="The restored photograph, colour and detail recovered"></div>
+            </div>
+          </div>
+        </div>
+        <figcaption style="margin-top:16px;font-size:16.5px;font-style:italic;color:#635746;">Family portrait, 1950s — fading lifted, water staining removed.</figcaption>
+      </figure>
+
+      <div style="margin-top:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:24px;">
+        <figure style="margin:0;background:#FFFDF8;border:1px solid rgba(44,36,24,0.16);padding:18px;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div>
+              <p style="margin:0;font-size:12.5px;letter-spacing:0.2em;text-transform:uppercase;color:#635746;font-weight:600;">Before</p>
+              <div style="position:relative;aspect-ratio:4/3;margin-top:8px;background:#EAE1CC;overflow:hidden;">
+                <div class="slot"><img class="before-cast" src="images/kodachrome-1967.jpg" alt="The faded slide, heavy colour cast"><div class="before-wear"></div></div>
+              </div>
+            </div>
+            <div>
+              <p style="margin:0;font-size:12.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A3B2E;font-weight:600;">After</p>
+              <div style="position:relative;aspect-ratio:4/3;margin-top:8px;background:#EAE1CC;">
+                <div class="slot"><img src="images/kodachrome-1967.jpg" alt="The restored slide, true Kodachrome colour recovered"></div>
+              </div>
+            </div>
+          </div>
+          <figcaption style="margin-top:14px;font-size:15.5px;font-style:italic;color:#635746;">Kodachrome slide, 1967 — colour cast corrected, mould removed.</figcaption>
+        </figure>
+        <figure style="margin:0;background:#FFFDF8;border:1px solid rgba(44,36,24,0.16);padding:18px;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div>
+              <p style="margin:0;font-size:12.5px;letter-spacing:0.2em;text-transform:uppercase;color:#635746;font-weight:600;">Before</p>
+              <div style="position:relative;aspect-ratio:4/3;margin-top:8px;background:#EAE1CC;overflow:hidden;">
+                <div class="slot"><img class="before-faded" src="images/picnic-1948.jpg" alt="The faded, foxed original print"><div class="before-wear"></div></div>
+              </div>
+            </div>
+            <div>
+              <p style="margin:0;font-size:12.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A3B2E;font-weight:600;">After</p>
+              <div style="position:relative;aspect-ratio:4/3;margin-top:8px;background:#EAE1CC;">
+                <div class="slot"><img src="images/picnic-1948.jpg" alt="The restored print, contrast and detail recovered"></div>
+              </div>
+            </div>
+          </div>
+          <figcaption style="margin-top:14px;font-size:15.5px;font-style:italic;color:#635746;">Family picnic, 1948 — creases, foxing and fading undone.</figcaption>
+        </figure>
+      </div>
+
+      <p style="margin:44px 0 0;font-size:17px;font-style:italic;color:#2C2418;">I'll tell you plainly what can be saved before we begin — you'll never pay to find out.</p>
+    </div>
+  </section>
+
+  <!-- ======================= III. HOW IT WORKS ======================= -->
+  <section id="process" style="background:#F3ECDD;scroll-margin-top:90px;">
+    <div class="wrap">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:23px;color:#9C7A3F;">III.</span>
+        <span style="font-size:13.5px;letter-spacing:0.22em;text-transform:uppercase;color:#7A3B2E;font-weight:600;">How It Works</span>
+        <span style="flex:1;height:1px;background:rgba(44,36,24,0.16);"></span>
+      </div>
+      <h2 style="margin:26px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(36px,3.4vw,52px);line-height:1.07;max-width:24ch;">From first phone call to finished book.</h2>
+      <!-- ⚠️ Délai 8-12 semaines = choix du design (marge de sécurité) ; Kalimna vise 4 sem. + 3 sem. livraison — À CONFIRMER -->
+      <p style="margin:22px 0 0;font-size:19px;line-height:1.6;color:#635746;max-width:64ch;">Most projects take eight to twelve weeks from the day your photographs arrive.</p>
+      <div style="margin-top:64px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:44px 64px;">
+        <div style="display:flex;gap:24px;">
+          <span style="flex:none;width:48px;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:44px;line-height:1;color:#9C7A3F;">1</span>
+          <div>
+            <h3 style="margin:4px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;">We talk</h3>
+            <p style="margin:8px 0 0;font-size:16.5px;line-height:1.6;color:#635746;">A call about your photographs, then a written quote. No obligation.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:24px;">
+          <span style="flex:none;width:48px;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:44px;line-height:1;color:#9C7A3F;">2</span>
+          <div>
+            <h3 style="margin:4px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;">They arrive safely</h3>
+            <p style="margin:8px 0 0;font-size:16.5px;line-height:1.6;color:#635746;">In person or by insured courier — logged, sleeved and stored the day they arrive.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:24px;">
+          <span style="flex:none;width:48px;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:44px;line-height:1;color:#9C7A3F;">3</span>
+          <div>
+            <h3 style="margin:4px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;">Digitising</h3>
+            <p style="margin:8px 0 0;font-size:16.5px;line-height:1.6;color:#635746;">Every photograph scanned individually, at archival resolution.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:24px;">
+          <span style="flex:none;width:48px;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:44px;line-height:1;color:#9C7A3F;">4</span>
+          <div>
+            <h3 style="margin:4px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;">Restore &amp; curate</h3>
+            <p style="margin:8px 0 0;font-size:16.5px;line-height:1.6;color:#635746;">Damage repaired digitally; the strongest images chosen for the book.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:24px;">
+          <span style="flex:none;width:48px;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:44px;line-height:1;color:#9C7A3F;">5</span>
+          <div>
+            <h3 style="margin:4px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;">Your approval</h3>
+            <p style="margin:8px 0 0;font-size:16.5px;line-height:1.6;color:#635746;">You review every page and approve a full proof before printing.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:24px;">
+          <span style="flex:none;width:48px;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:44px;line-height:1;color:#9C7A3F;">6</span>
+          <div>
+            <h3 style="margin:4px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;">The book comes home</h3>
+            <p style="margin:8px 0 0;font-size:16.5px;line-height:1.6;color:#635746;">Book, originals and the complete digital archive — delivered back to you personally.</p>
+          </div>
+        </div>
+      </div>
+      <p style="margin:64px 0 0;border-top:1px solid rgba(44,36,24,0.16);padding-top:28px;font-size:16.5px;font-style:italic;text-align:center;color:#635746;">Private by default — your photographs are never shown or shared without your written permission.</p>
+    </div>
+  </section>
+
+  <!-- ======================= IV. PRICING ======================= -->
+  <section id="pricing" style="background:#FBF7EF;scroll-margin-top:90px;">
+    <div class="wrap">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:23px;color:#9C7A3F;">IV.</span>
+        <span style="font-size:13.5px;letter-spacing:0.22em;text-transform:uppercase;color:#7A3B2E;font-weight:600;">Pricing</span>
+        <span style="flex:1;height:1px;background:rgba(44,36,24,0.16);"></span>
+      </div>
+      <h2 style="margin:26px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(36px,3.4vw,52px);line-height:1.07;">Two ways to begin.</h2>
+      <p style="margin:22px 0 0;font-size:19px;line-height:1.6;color:#635746;max-width:64ch;">Every project is quoted individually, in writing, after we talk — no obligation.</p>
+
+      <!-- Prix réels de Kalimna (email 13/07) : Intro $2,000+GST · Deluxe from $5,000+GST -->
+      <div style="margin:60px auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(400px,100%),1fr));gap:32px;align-items:stretch;max-width:1040px;">
+        <div style="background:#FFFDF8;border:1px solid rgba(44,36,24,0.2);padding:48px;">
+          <p style="margin:0;font-size:13.5px;letter-spacing:0.22em;text-transform:uppercase;color:#9C7A3F;font-weight:600;">Option One</p>
+          <h3 style="margin:14px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:42px;">The Keepsake</h3>
+          <p style="margin:10px 0 0;font-size:19px;color:#635746;"><span style="font-style:italic;">from</span> <span style="font-size:34px;font-weight:600;color:#2C2418;">$2,000</span></p>
+          <p style="margin:16px 0 0;font-size:17px;line-height:1.6;color:#635746;">One volume from a focused collection — a wedding, a childhood, one chapter.</p>
+          <div style="margin:26px 0 0;border-top:1px solid rgba(44,36,24,0.16);padding-top:26px;display:flex;flex-direction:column;gap:13px;">
+            <p style="margin:0;display:flex;gap:12px;font-size:17px;line-height:1.5;"><span style="color:#9C7A3F;">&mdash;</span><span>35 photographs digitised, print-ready</span></p>
+            <p style="margin:0;display:flex;gap:12px;font-size:17px;line-height:1.5;"><span style="color:#9C7A3F;">&mdash;</span><span>Light restoration where needed</span></p>
+            <p style="margin:0;display:flex;gap:12px;font-size:17px;line-height:1.5;"><span style="color:#9C7A3F;">&mdash;</span><span>One hardcover book — 8&times;8&Prime; or 8&times;11&Prime;, 25 pages</span></p>
+            <p style="margin:0;display:flex;gap:12px;font-size:17px;line-height:1.5;"><span style="color:#9C7A3F;">&mdash;</span><span>Your captions and stories throughout</span></p>
+            <p style="margin:0;display:flex;gap:12px;font-size:17px;line-height:1.5;"><span style="color:#9C7A3F;">&mdash;</span><span>One copy, ready to keep or gift</span></p>
+          </div>
+        </div>
+        <div style="background:#251E14;color:#F1EADB;padding:48px;">
+          <p style="margin:0;font-size:13.5px;letter-spacing:0.22em;text-transform:uppercase;color:#C19A55;font-weight:600;">Option Two</p>
+          <h3 style="margin:14px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:42px;">The Family Archive</h3>
+          <p style="margin:10px 0 0;font-size:19px;color:#C9BEA9;"><span style="font-style:italic;">from</span> <span style="font-size:34px;font-weight:600;color:#F1EADB;">$5,000</span></p>
+          <p style="margin:16px 0 0;font-size:17px;line-height:1.6;color:#C9BEA9;">The whole collection, mastered once and for all — priced to its scope.</p>
+          <div style="margin:26px 0 0;border-top:1px solid rgba(241,234,219,0.22);padding-top:26px;display:flex;flex-direction:column;gap:13px;">
+            <p style="margin:0;display:flex;gap:12px;font-size:17px;line-height:1.5;color:#E4DAC4;"><span style="color:#C19A55;">&mdash;</span><span>Up to 100 photographs — and beyond, priced to scope</span></p>
+            <p style="margin:0;display:flex;gap:12px;font-size:17px;line-height:1.5;color:#E4DAC4;"><span style="color:#C19A55;">&mdash;</span><span>Full restoration throughout</span></p>
+            <p style="margin:0;display:flex;gap:12px;font-size:17px;line-height:1.5;color:#E4DAC4;"><span style="color:#C19A55;">&mdash;</span><span>A larger book — 8&times;11&Prime; or 10&times;10&Prime;, 50&ndash;60 pages</span></p>
+            <p style="margin:0;display:flex;gap:12px;font-size:17px;line-height:1.5;color:#E4DAC4;"><span style="color:#C19A55;">&mdash;</span><span>Extra copies for family at time of ordering</span></p>
+            <p style="margin:0;display:flex;gap:12px;font-size:17px;line-height:1.5;color:#E4DAC4;"><span style="color:#C19A55;">&mdash;</span><span>The complete digital archive on USB</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin:40px auto 0;max-width:1040px;display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;">
+        <a class="btn" href="#enquire" style="text-decoration:none;background:#7A3B2E;color:#FBF7EF;font-size:18px;font-weight:600;padding:17px 36px;border-radius:3px;">Request your quote</a>
+        <p style="margin:0;font-size:16px;color:#635746;font-style:italic;">Prices in AUD, plus GST &middot; payment staged, never all upfront.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= V. ABOUT ======================= -->
+  <section id="about" style="background:#F3ECDD;scroll-margin-top:90px;">
+    <div class="wrap">
+      <div class="split" style="display:grid;grid-template-columns:minmax(0,0.8fr) minmax(0,1.2fr);gap:88px;align-items:center;">
+        <figure style="margin:0;">
+          <div style="background:#FFFDF8;border:1px solid rgba(44,36,24,0.16);padding:12px;box-shadow:0 26px 52px -30px rgba(44,36,24,0.35);">
+            <div style="position:relative;aspect-ratio:3/4;background:#EAE1CC;">
+              <!-- ⚠️ Visuel temporaire (mains au travail, sans visage) — remplacer par le vrai portrait de Kalimna -->
+              <div class="slot"><img src="images/kalimna-hands.jpg" alt="Kalimna at work — gloved hands sorting old family photographs"></div>
+            </div>
+          </div>
+        </figure>
+        <div>
+          <div style="display:flex;align-items:center;gap:16px;">
+            <span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:23px;color:#9C7A3F;">V.</span>
+            <span style="font-size:13.5px;letter-spacing:0.22em;text-transform:uppercase;color:#7A3B2E;font-weight:600;">About</span>
+            <span style="flex:1;height:1px;background:rgba(44,36,24,0.16);"></span>
+          </div>
+          <h2 style="margin:26px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(36px,3.4vw,52px);line-height:1.07;">Hello — I'm Kalimna.</h2>
+          <!-- ⚠️ HISTOIRE À VALIDER avec Kalimna (rédigée par le design, pas par elle) -->
+          <p style="margin:24px 0 0;font-size:19px;line-height:1.7;max-width:54ch;">This studio began with my grandmother's albums — sixty years of them, restored and bound into a single book. I've made them for other families ever since: careful, unhurried work, one family at a time. From first call to delivery, you deal only with me. I call it the art of remembering.</p>
+          <p style="margin:28px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:34px;color:#9C7A3F;">— Kalimna</p>
+          <div style="margin-top:32px;border-top:1px solid rgba(44,36,24,0.16);padding-top:24px;display:flex;gap:44px;flex-wrap:wrap;">
+            <p style="margin:0;font-size:16.5px;color:#635746;"><span style="display:block;font-size:12.5px;letter-spacing:0.2em;text-transform:uppercase;color:#9C7A3F;font-weight:600;margin-bottom:6px;">The studio</span>Bowral, New South Wales</p>
+            <p style="margin:0;font-size:16.5px;color:#635746;"><span style="display:block;font-size:12.5px;letter-spacing:0.2em;text-transform:uppercase;color:#9C7A3F;font-weight:600;margin-bottom:6px;">Clients</span>Australia-wide, by post and courier</p>
+            <p style="margin:0;font-size:16.5px;color:#635746;"><span style="display:block;font-size:12.5px;letter-spacing:0.2em;text-transform:uppercase;color:#9C7A3F;font-weight:600;margin-bottom:6px;">A conversation</span><a href="tel:+61412731968" style="font-weight:600;">0412 731 968</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= VI. KIND WORDS ======================= -->
+  <!-- ⚠️ TÉMOIGNAGES PLACEHOLDER — à remplacer par de vrais témoignages -->
+  <section id="words" style="background:#251E14;scroll-margin-top:90px;">
+    <div class="wrap-words">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:23px;color:#C19A55;">VI.</span>
+        <span style="font-size:13.5px;letter-spacing:0.22em;text-transform:uppercase;color:#C19A55;font-weight:600;">Kind Words</span>
+        <span style="flex:1;height:1px;background:rgba(241,234,219,0.2);"></span>
+      </div>
+      <div style="max-width:880px;margin:60px auto 0;display:flex;flex-direction:column;gap:48px;">
+        <blockquote style="margin:0;">
+          <p style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:clamp(24px,2.4vw,31px);line-height:1.45;color:#F1EADB;">&ldquo;Four shoeboxes and a garage of slides became our parents' whole lives. I cried when I opened it.&rdquo;</p>
+          <footer style="margin-top:14px;font-size:14px;letter-spacing:0.18em;text-transform:uppercase;color:#C19A55;font-weight:600;">Sarah M. &middot; Melbourne</footer>
+        </blockquote>
+        <div style="height:1px;background:rgba(241,234,219,0.14);"></div>
+        <blockquote style="margin:0;">
+          <p style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:clamp(24px,2.4vw,31px);line-height:1.45;color:#F1EADB;">&ldquo;I'm not good with computers and never once felt silly. The book was ready two weeks before John's eightieth.&rdquo;</p>
+          <footer style="margin-top:14px;font-size:14px;letter-spacing:0.18em;text-transform:uppercase;color:#C19A55;font-weight:600;">Margaret W. &middot; Burradoo</footer>
+        </blockquote>
+        <div style="height:1px;background:rgba(241,234,219,0.14);"></div>
+        <blockquote style="margin:0;">
+          <p style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:clamp(24px,2.4vw,31px);line-height:1.45;color:#F1EADB;">&ldquo;Photographs we'd written off look like they were taken yesterday — and still feel like ours.&rdquo;</p>
+          <footer style="margin-top:14px;font-size:14px;letter-spacing:0.18em;text-transform:uppercase;color:#C19A55;font-weight:600;">David &amp; Helen T. &middot; Sydney</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= VII. COMMON QUESTIONS ======================= -->
+  <section id="faq" style="background:#FBF7EF;scroll-margin-top:90px;">
+    <div class="wrap">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:23px;color:#9C7A3F;">VII.</span>
+        <span style="font-size:13.5px;letter-spacing:0.22em;text-transform:uppercase;color:#7A3B2E;font-weight:600;">Common Questions</span>
+        <span style="flex:1;height:1px;background:rgba(44,36,24,0.16);"></span>
+      </div>
+      <div style="max-width:880px;margin-top:52px;">
+        <details open style="border-top:1px solid rgba(44,36,24,0.16);">
+          <summary style="cursor:pointer;padding:22px 6px;font-size:20px;font-weight:600;line-height:1.4;">What happens to my original photographs?</summary>
+          <div style="padding:0 6px 26px;"><p style="margin:0;max-width:70ch;font-size:17.5px;line-height:1.65;color:#635746;">Logged and photographed on arrival, stored in archival sleeves, and returned to you as soon as scanning is complete. They stay safe and are never altered — all restoration happens on the digital copy.</p></div>
+        </details>
+        <details style="border-top:1px solid rgba(44,36,24,0.16);">
+          <summary style="cursor:pointer;padding:22px 6px;font-size:20px;font-weight:600;line-height:1.4;">I've inherited boxes of photographs and don't know where to start.</summary>
+          <div style="padding:0 6px 26px;"><p style="margin:0;max-width:70ch;font-size:17.5px;line-height:1.65;color:#635746;">That's exactly what this service is for. Bring me the jumble — prints, negatives, slides, files, whole albums. We'll work out together what's there and what it should become, and every member of the family can share the digital archive.</p></div>
+        </details>
+        <details style="border-top:1px solid rgba(44,36,24,0.16);">
+          <summary style="cursor:pointer;padding:22px 6px;font-size:20px;font-weight:600;line-height:1.4;">Can badly damaged photographs be saved?</summary>
+          <div style="padding:0 6px 26px;"><p style="margin:0;max-width:70ch;font-size:17.5px;line-height:1.65;color:#635746;">Almost always. If an image is beyond saving I'll tell you before work begins — you'll never pay to find out.</p></div>
+        </details>
+        <details style="border-top:1px solid rgba(44,36,24,0.16);">
+          <summary style="cursor:pointer;padding:22px 6px;font-size:20px;font-weight:600;line-height:1.4;">How much will it cost?</summary>
+          <div style="padding:0 6px 26px;"><p style="margin:0;max-width:70ch;font-size:17.5px;line-height:1.65;color:#635746;">The Keepsake from $2,000, The Family Archive from $5,000 (plus GST). A fixed written quote before we begin — no surprises.</p></div>
+        </details>
+        <details style="border-top:1px solid rgba(44,36,24,0.16);">
+          <summary style="cursor:pointer;padding:22px 6px;font-size:20px;font-weight:600;line-height:1.4;">How long will my book take?</summary>
+          <div style="padding:0 6px 26px;"><p style="margin:0;max-width:70ch;font-size:17.5px;line-height:1.65;color:#635746;">Eight to twelve weeks, typically. One project at a time — the date we agree is the date you get. For an occasion, tell me early and I'll plan backwards from it.</p></div>
+        </details>
+        <details style="border-top:1px solid rgba(44,36,24,0.16);">
+          <summary style="cursor:pointer;padding:22px 6px;font-size:20px;font-weight:600;line-height:1.4;">Do you write the stories for me?</summary>
+          <div style="padding:0 6px 26px;"><p style="margin:0;max-width:70ch;font-size:17.5px;line-height:1.65;color:#635746;">No — the words are your family's. I'll give you simple prompts if they don't come easily, and set your words (even your handwriting) beautifully on the page.</p></div>
+        </details>
+        <details style="border-top:1px solid rgba(44,36,24,0.16);">
+          <summary style="cursor:pointer;padding:22px 6px;font-size:20px;font-weight:600;line-height:1.4;">I'm not confident with computers. Is that a problem?</summary>
+          <div style="padding:0 6px 26px;"><p style="margin:0;max-width:70ch;font-size:17.5px;line-height:1.65;color:#635746;">Not at all. Everything happens by phone, post and in person — you never need to upload or log in to anything. The archive arrives on a labelled USB with a plain-English guide.</p></div>
+        </details>
+        <details style="border-top:1px solid rgba(44,36,24,0.16);">
+          <summary style="cursor:pointer;padding:22px 6px;font-size:20px;font-weight:600;line-height:1.4;">How do my photographs get to you?</summary>
+          <div style="padding:0 6px 26px;"><p style="margin:0;max-width:70ch;font-size:17.5px;line-height:1.65;color:#635746;">Hand them over in person, or I'll arrange an insured, tracked courier to your door and talk you through packing them safely.</p></div>
+        </details>
+        <details style="border-top:1px solid rgba(44,36,24,0.16);border-bottom:1px solid rgba(44,36,24,0.16);">
+          <summary style="cursor:pointer;padding:22px 6px;font-size:20px;font-weight:600;line-height:1.4;">Can my family have copies?</summary>
+          <div style="padding:0 6px 26px;"><p style="margin:0;max-width:70ch;font-size:17.5px;line-height:1.65;color:#635746;">Yes — extra books can be ordered with your project, and the digital archive can go to as many family members as you like.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= VIII. BEGIN ======================= -->
+  <section id="enquire" style="background:#F3ECDD;scroll-margin-top:90px;">
+    <div class="wrap">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:23px;color:#9C7A3F;">VIII.</span>
+        <span style="font-size:13.5px;letter-spacing:0.22em;text-transform:uppercase;color:#7A3B2E;font-weight:600;">Begin</span>
+        <span style="flex:1;height:1px;background:rgba(44,36,24,0.16);"></span>
+      </div>
+      <h2 style="margin:26px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(36px,3.4vw,52px);line-height:1.07;max-width:24ch;">Tell me about your photographs.</h2>
+      <p style="margin:22px 0 0;font-size:19px;line-height:1.6;color:#635746;max-width:64ch;">A few minutes, no obligation — I reply personally within two business days.</p>
+
+      <div class="split" style="margin-top:56px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,0.7fr);gap:56px;align-items:start;">
+
+        <div>
+          <!-- ⚠️ Formulaire front-only — brancher Formspree ou équivalent avant mise en ligne -->
+          <form id="enquiry-form" style="background:#FFFDF8;border:1px solid rgba(44,36,24,0.2);padding:44px;display:flex;flex-direction:column;gap:26px;">
+            <label style="display:block;">
+              <span style="display:block;font-size:17px;font-weight:600;margin-bottom:8px;">Your name <span style="color:#7A3B2E;">*</span></span>
+              <input type="text" name="name" required autocomplete="name" style="width:100%;box-sizing:border-box;padding:13px 14px;font-size:18px;background:#FBF7EF;border:1px solid rgba(44,36,24,0.35);border-radius:3px;">
+            </label>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:22px;">
+              <label style="display:block;">
+                <span style="display:block;font-size:17px;font-weight:600;margin-bottom:8px;">Phone <span style="color:#7A3B2E;">*</span></span>
+                <input type="tel" name="phone" required autocomplete="tel" style="width:100%;box-sizing:border-box;padding:13px 14px;font-size:18px;background:#FBF7EF;border:1px solid rgba(44,36,24,0.35);border-radius:3px;">
+              </label>
+              <label style="display:block;">
+                <span style="display:block;font-size:17px;font-weight:600;margin-bottom:8px;">Email <span style="font-weight:400;color:#635746;">(if you use it)</span></span>
+                <input type="email" name="email" autocomplete="email" style="width:100%;box-sizing:border-box;padding:13px 14px;font-size:18px;background:#FBF7EF;border:1px solid rgba(44,36,24,0.35);border-radius:3px;">
+              </label>
+            </div>
+            <div>
+              <span style="display:block;font-size:17px;font-weight:600;margin-bottom:10px;">How would you prefer I reply?</span>
+              <div style="display:flex;gap:28px;flex-wrap:wrap;">
+                <label style="display:flex;align-items:center;gap:10px;font-size:17.5px;cursor:pointer;"><input type="radio" name="reply" value="phone" checked style="width:20px;height:20px;accent-color:#7A3B2E;">A phone call</label>
+                <label style="display:flex;align-items:center;gap:10px;font-size:17.5px;cursor:pointer;"><input type="radio" name="reply" value="email" style="width:20px;height:20px;accent-color:#7A3B2E;">An email</label>
+              </div>
+            </div>
+            <div>
+              <span style="display:block;font-size:17px;font-weight:600;margin-bottom:12px;">What do you have? <span style="font-weight:400;color:#635746;">(tick any)</span></span>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:12px 24px;">
+                <label style="display:flex;align-items:center;gap:11px;font-size:17.5px;cursor:pointer;"><input type="checkbox" name="media-prints" style="width:21px;height:21px;accent-color:#7A3B2E;">Printed photographs</label>
+                <label style="display:flex;align-items:center;gap:11px;font-size:17.5px;cursor:pointer;"><input type="checkbox" name="media-albums" style="width:21px;height:21px;accent-color:#7A3B2E;">Photo albums</label>
+                <label style="display:flex;align-items:center;gap:11px;font-size:17.5px;cursor:pointer;"><input type="checkbox" name="media-negatives" style="width:21px;height:21px;accent-color:#7A3B2E;">Negatives</label>
+                <label style="display:flex;align-items:center;gap:11px;font-size:17.5px;cursor:pointer;"><input type="checkbox" name="media-slides" style="width:21px;height:21px;accent-color:#7A3B2E;">Slides</label>
+                <label style="display:flex;align-items:center;gap:11px;font-size:17.5px;cursor:pointer;"><input type="checkbox" name="media-digital" style="width:21px;height:21px;accent-color:#7A3B2E;">Digital files or scans</label>
+                <label style="display:flex;align-items:center;gap:11px;font-size:17.5px;cursor:pointer;"><input type="checkbox" name="media-unsure" style="width:21px;height:21px;accent-color:#7A3B2E;">I'm not sure yet</label>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:22px;">
+              <label style="display:block;">
+                <span style="display:block;font-size:17px;font-weight:600;margin-bottom:8px;">Roughly how much is there?</span>
+                <select name="quantity" style="width:100%;box-sizing:border-box;padding:13px 14px;font-size:17.5px;background:#FBF7EF;border:1px solid rgba(44,36,24,0.35);border-radius:3px;">
+                  <option>Please choose&hellip;</option>
+                  <option>A shoebox or less</option>
+                  <option>One or two boxes</option>
+                  <option>Several boxes</option>
+                  <option>A large collection — a cupboard or more</option>
+                  <option>I'm honestly not sure</option>
+                </select>
+              </label>
+              <label style="display:block;">
+                <span style="display:block;font-size:17px;font-weight:600;margin-bottom:8px;">When would you like it finished?</span>
+                <select name="timeline" style="width:100%;box-sizing:border-box;padding:13px 14px;font-size:17.5px;background:#FBF7EF;border:1px solid rgba(44,36,24,0.35);border-radius:3px;">
+                  <option>Please choose&hellip;</option>
+                  <option>No particular date</option>
+                  <option>Within six months</option>
+                  <option>Within three months</option>
+                  <option>For a particular occasion — I'll explain below</option>
+                </select>
+              </label>
+            </div>
+            <label style="display:block;">
+              <span style="display:block;font-size:17px;font-weight:600;margin-bottom:4px;">What is the story you would like to tell?</span>
+              <span style="display:block;font-size:15.5px;color:#635746;margin-bottom:10px;">A few lines is plenty — whose photographs, and what should this become?</span>
+              <textarea name="story" rows="5" style="width:100%;box-sizing:border-box;padding:13px 14px;font-size:18px;line-height:1.6;background:#FBF7EF;border:1px solid rgba(44,36,24,0.35);border-radius:3px;resize:vertical;"></textarea>
+            </label>
+            <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
+              <button type="submit" class="btn" style="background:#7A3B2E;color:#FBF7EF;font-size:19px;font-weight:600;padding:18px 40px;border:none;border-radius:3px;cursor:pointer;">Send my enquiry</button>
+              <p style="margin:0;font-size:16px;color:#635746;font-style:italic;">No obligation — I reply within two business days.</p>
+            </div>
+          </form>
+
+          <div id="enquiry-thanks" hidden style="background:#FFFDF8;border:1px solid rgba(44,36,24,0.2);padding:56px 48px;">
+            <p style="margin:0;font-size:13.5px;letter-spacing:0.22em;text-transform:uppercase;color:#9C7A3F;font-weight:600;">Thank you</p>
+            <h3 style="margin:16px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:40px;line-height:1.1;">Your enquiry is on its way.</h3>
+            <p style="margin:22px 0 0;font-size:19px;line-height:1.7;color:#635746;max-width:56ch;">I will reply personally within two business days. If it is easier to talk, call me any weekday on <a href="tel:+61412731968" style="font-weight:600;">0412 731 968</a>.</p>
+            <p style="margin:26px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:30px;color:#9C7A3F;">— Kalimna</p>
+            <button id="enquiry-reset" style="margin-top:30px;background:none;border:none;padding:0;font-size:16px;color:#7A3B2E;text-decoration:underline;text-underline-offset:3px;cursor:pointer;">Send another enquiry</button>
+          </div>
+        </div>
+
+        <aside>
+          <h3 style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:32px;">Prefer to talk?</h3>
+          <a href="tel:+61412731968" style="display:inline-block;margin-top:16px;font-size:28px;font-weight:700;color:#7A3B2E;">0412 731 968</a>
+          <p style="margin:10px 0 0;font-size:16px;color:#635746;">Monday to Friday, 9am&ndash;5pm (AEST)</p>
+          <p style="margin:6px 0 0;font-size:16px;color:#635746;"><a href="mailto:kalimna@yourphotosyourstory.com.au">kalimna@yourphotosyourstory.com.au</a></p>
+          <div style="margin-top:30px;border-top:1px solid rgba(44,36,24,0.16);padding-top:26px;">
+            <p style="margin:0;font-size:12.5px;letter-spacing:0.2em;text-transform:uppercase;color:#9C7A3F;font-weight:600;">The studio</p>
+            <p style="margin:10px 0 0;font-size:17px;line-height:1.6;color:#635746;">Bowral NSW &middot; clients Australia-wide by insured post and courier.</p>
+          </div>
+          <div style="margin-top:26px;border-top:1px solid rgba(44,36,24,0.16);padding-top:26px;">
+            <p style="margin:0;font-size:17px;line-height:1.65;font-style:italic;">Not sure what you have? That's normal. Bring me the mess — sorting it out is part of the job.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer style="background:#251E14;color:#C9BEA9;">
+  <div class="wrap-footer">
+    <div style="display:flex;justify-content:space-between;gap:44px;flex-wrap:wrap;align-items:flex-start;">
+      <div style="max-width:40ch;">
+        <p style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;font-weight:600;color:#F1EADB;">Your Photos, <span style="font-style:italic;color:#C19A55;">Your Story</span></p>
+        <p style="margin:12px 0 0;font-size:16px;line-height:1.6;">The art of remembering — bespoke books from your family's own photographs.</p>
+      </div>
+      <nav style="display:grid;grid-template-columns:1fr 1fr;gap:10px 36px;">
+        <a class="flink" href="#service" style="color:#E4DAC4;font-size:16.5px;">The Service</a>
+        <a class="flink" href="#pricing" style="color:#E4DAC4;font-size:16.5px;">Pricing</a>
+        <a class="flink" href="#restoration" style="color:#E4DAC4;font-size:16.5px;">Before &amp; After</a>
+        <a class="flink" href="#faq" style="color:#E4DAC4;font-size:16.5px;">FAQ</a>
+        <a class="flink" href="#process" style="color:#E4DAC4;font-size:16.5px;">How It Works</a>
+        <a class="flink" href="#enquire" style="color:#E4DAC4;font-size:16.5px;">Enquire</a>
+      </nav>
+      <div>
+        <p style="margin:0;font-size:20px;font-weight:700;"><a href="tel:+61412731968" style="color:#F1EADB;">0412 731 968</a></p>
+        <p style="margin:8px 0 0;font-size:16px;"><a href="mailto:kalimna@yourphotosyourstory.com.au" style="color:#E4DAC4;">kalimna@yourphotosyourstory.com.au</a></p>
+        <p style="margin:8px 0 0;font-size:16px;">Bowral, New South Wales</p>
+      </div>
+    </div>
+    <div style="margin-top:48px;border-top:1px solid rgba(241,234,219,0.16);padding-top:24px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+      <p style="margin:0;font-size:14.5px;">&copy; <span id="year">2026</span> Your Photos, Your Story &middot; Your photographs are never shared without written permission.</p>
+      <a class="flink" href="#top" style="font-size:14.5px;color:#E4DAC4;">Back to top &uarr;</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var form = document.getElementById('enquiry-form');
+  var thanks = document.getElementById('enquiry-thanks');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    form.hidden = true;
+    thanks.hidden = false;
+    thanks.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+  document.getElementById('enquiry-reset').addEventListener('click', function () {
+    thanks.hidden = true;
+    form.hidden = false;
+    form.reset();
+  });
+</script>
+</body>
+</html>
