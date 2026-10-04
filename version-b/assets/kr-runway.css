@@ -1,0 +1,45 @@
+/* Kalimna sur le code de runway.com : seulement ce que la copie exige (repris de la transcription de CHEF).
+   Tout le reste vient des feuilles de Runway, dans assets/runway/, sans modification. */
+
+/* le logo de Runway est un dessin : son nom le remplace, en texte, dans la police de Runway */
+.kr-logo { font-family: var(--abcNormal), sans-serif; font-weight: 500; font-size: 19px; line-height: 1; letter-spacing: -0.02em; white-space: nowrap; }
+.kr-logo-pied { font-size: 22px; }
+/* sur telephone, son nom (23 signes, plus long que le logo de Runway) passait sous le bouton d'appel :
+   il se pose sur deux lignes */
+@media (max-width: 480px) { .kr-logo:not(.kr-logo-pied) { font-size: 16px; line-height: 1.1; white-space: normal; display: block; max-width: 6.6em; } }
+
+/* Naotag, 01/10 (Watercolor, meme code) : « les boutons deviennent parfois blanc quand on les survoles ».
+   A partir de 1600 px, l'appel de l'en-tete de l'about est sombre (min-[1600px]:bg-offBlack, texte blanc) ;
+   la feuille de Runway n'a pas de survol propre a cette largeur et son survol clair le faisait disparaitre.
+   Il garde au survol le fond sombre de son voisin See pricing (#222222, sa sauge dans r2) */
+@media (min-width: 1600px) { header a[class~="min-[1600px]:bg-offBlack"]:hover { background-color: rgb(70 85 65); } }
+
+/* Naotag, 01/10 : « l'image de banniere devrait etre un peu plus basse, y'a trop d'espace blanc en bas ».
+   Runway fixe l'ouverture en 21:9 (236 px vides sous l'image a 1440x900) : elle descend jusqu'a 20 px du bas
+   de l'ecran, la marge des cotes, 500 px au moins */
+.kr-ouverture { height: calc(100vh - 20px); height: calc(100svh - 20px); min-height: 500px; max-height: none; }
+
+/* les photos passent par <picture> (WebP et repli JPEG) : la boite s'efface, l'image garde sa place */
+picture { display: contents; }
+
+/* Code 802 R12, toujours un visuel au-dessus du texte : sur telephone, la grille des onglets de Runway
+   empile les phrases puis la photo ; la photo passe devant (ordinateur inchange, deux colonnes) */
+@media (max-width: 767px) { #wh-panel { order: -1; } }
+
+/* la section de comparaison d'Apple : ses deux offres, ses quatre rangees (en-tete, photos, pages, USB),
+   sur la grille d'Apple ramenee a deux colonnes */
+/* (Apple pose 12 lignes pour ses 4 modeles : les 8 vides gardaient leur ecart, 304 px au telephone) */
+/* (#pricing devant : les feuilles d'Apple, chargees dans la section, viennent apres celle-ci) */
+#pricing.section-compare .compare-module-wrapper .compare-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(4, auto); grid-template-areas: "airpods-4-device airpods-4-noise-cancellation-device" "airpods-4-single-charge airpods-4-noise-cancellation-single-charge" "airpods-4-spatial-audio airpods-4-noise-cancellation-spatial-audio" "airpods-4-case airpods-4-noise-cancellation-case"; }
+/* sa photo a la place du packshot d'Apple, dans le meme emplacement (hauteur de .image-wrap) */
+#pricing.section-compare .kr-offre { height: 100%; aspect-ratio: 4 / 3; margin: 0; border-radius: 12px; overflow: hidden; }
+#pricing.section-compare .kr-offre-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* le chevron de « How it works » : la police d'icones d'Apple n'est pas chargee */
+#pricing.section-compare .more::after { content:"›"; font-family: inherit; }
+
+/* les classes display de Runway (block, flex) passeraient devant l'attribut hidden */
+[hidden] { display: none !important; }
+
+/* carrousel de l'about : on le tire a la main, comme sur runway.com */
+[data-wh-carrousel] { touch-action: pan-y; user-select: none; }
+[data-wh-carrousel] img { pointer-events: none; }

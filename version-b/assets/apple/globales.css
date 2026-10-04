@@ -1,0 +1,58 @@
+/* Regles d'apple.com (miroir du 21/08, page /airpods/) qui s'appliquent a un element de la section de
+   comparaison, dans l'ordre des feuilles, bornees a la section. Extrait par extraire_apple.py. */
+.section-compare { font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 106.25%; quotes: "“" "”" }
+.section-compare { font-size: 17px; line-height: 1.47059; font-weight: 400; letter-spacing: -0.022em; font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; color: var(--sk-body-text-color,rgb(46, 49, 40)); font-style: normal }
+.section-compare { font-synthesis: none; -webkit-font-smoothing: antialiased }
+.section-compare .visuallyhidden { position: absolute; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(0px 0px 99.9% 99.9%); overflow: hidden; height: 1px; width: 1px; padding: 0px; border: 0px; }
+.section-compare .nowrap { display: inline-block; text-decoration: inherit; white-space: nowrap; }
+.section-compare br.large { display: block; }
+@media (max-width: 1068px) { .section-compare br.large { display: none; } }
+@media (max-width: 734px) { .section-compare br.large { display: none; } }
+.section-compare .button { --sk-button-color: rgb(253, 252, 246); --sk-button-color-hover: var(--sk-button-color); --sk-button-color-active: var(--sk-button-color-hover); --sk-button-disabled-opacity: var(--sk-link-disabled-opacity,0.42); --sk-button-border-color: transparent; --sk-button-border-radius: 980px; --sk-button-margin-horizontal: 14px; --sk-button-margin-vertical: 14px; --sk-button-min-width-basis: 60px; --sk-button-padding-horizontal: 16px; --sk-button-padding-vertical: 9px; --sk-button-border-width: 1px; --sk-button-box-sizing: content-box; --sk-button-width: auto; --sk-button-display: inline-block; font-size: 14px; line-height: 1.28577; font-weight: 400; letter-spacing: -0.016em; font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; background: var(--sk-button-background); color: var(--sk-button-color); padding-block: calc(var(--sk-button-padding-vertical) - var(--sk-button-border-width)); padding-inline: calc(var(--sk-button-padding-horizontal) - var(--sk-button-border-width)); border-radius: var(--sk-button-border-radius); border: var(--sk-button-border-width) solid var(--sk-button-border-color); width: var(--sk-button-width); min-width: calc(var(--sk-button-min-width-basis) - var(--sk-button-padding-horizontal)*2); cursor: pointer; display: var(--sk-button-display); box-sizing: var(--sk-button-box-sizing); text-align: center; text-decoration: none; white-space: nowrap; --sk-button-background: rgb(70, 85, 65); --sk-button-background-hover: #465541; --sk-button-background-active: #465541; }
+.section-compare .button:hover { background: var(--sk-button-background-hover,var(--sk-button-background)); color: var(--sk-button-color-hover,var(--sk-button-color)); text-decoration: none; border-color: rgba(46, 49, 40, 0); }
+.section-compare .button:focus-visible { outline: 2px solid var(--sk-focus-color,#465541); outline-offset: var(--sk-focus-offset-container,3px); }
+.section-compare .button:active { background: var(--sk-button-background-active,var(--sk-button-background)); color: var(--sk-button-color-active,var(--sk-button-color)); outline: none; }
+.section-compare .button-reduced { --sk-button-padding-horizontal: 11px; --sk-button-padding-vertical: 4px; --sk-button-min-width-basis: 45px; --sk-button-margin-horizontal: 10px; --sk-button-margin-vertical: 10px; font-size: 12px; line-height: 1.33337; font-weight: 400; letter-spacing: -0.01em; font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.section-compare .footnote a { vertical-align: inherit; color: inherit; }
+.section-compare .footnote-supglyph { position: relative; vertical-align: initial; text-underline-offset: -0.28em; }
+.section-compare .links-stacked { margin-left: 0px; margin-right: 0px; list-style: none; }
+.section-compare .links-stacked li { margin: 0px; display: block; }
+.section-compare .links-stacked li + li { margin-top: var(--sk-links-stacked-margin,0.4em); }
+.section-compare figure, .section-compare h2, .section-compare h3, .section-compare li, .section-compare p, .section-compare ul { margin: 0px; padding: 0px; }
+.section-compare:focus-visible { outline: 2px solid var(--sk-focus-color,#465541); outline-offset: var(--sk-focus-offset,1px); }
+.section-compare h2, .section-compare h3 { font-weight: 600; color: var(--sk-headline-text-color,rgb(46, 49, 40)); }
+.section-compare h2 + *, .section-compare h3 + * { margin-top: var(--sk-headline-plus-first-element-margin,0.8em); }
+.section-compare p + * { margin-top: var(--sk-paragraph-plus-element-margin,0.8em); }
+.section-compare ul { margin-inline-start: 1.17647em; }
+.section-compare a { color: var(--sk-body-link-color,rgb(70, 85, 65)); letter-spacing: inherit; }
+.section-compare a:hover { text-decoration: underline; }
+.section-compare .visuallyhidden { position: absolute; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(0px 0px 99.9% 99.9%); overflow: hidden; height: 1px; width: 1px; padding: 0px; border: 0px; }
+.section-compare .nowrap { display: inline-block; text-decoration: inherit; white-space: nowrap; }
+.section-compare sup { position: relative; font-size: var(--sk-footnote-font-size,0.6em); vertical-align: initial; }
+.section-compare sup { top: var(--sk-footnote-offset-top,-0.5em); }
+.section-compare .row { display: flex; flex-flow: wrap; width: 100%; }
+.section-compare .column { box-sizing: border-box; margin: 0px; padding: 0px; min-width: 0px; }
+.section-compare .icon::after, .section-compare .icon::before, .section-compare .more::after, .section-compare .more::before { font-family: "SF Pro Icons"; color: inherit; display: inline-block; font-style: normal; font-weight: inherit; font-size: inherit; line-height: 1; position: relative; z-index: 1; text-decoration: none; }
+.section-compare .icon::before, .section-compare .more::before { display: none; }
+.section-compare .icon-after::after, .section-compare .more::after { padding-inline-start: 0.24em; top: 0px; }
+.section-compare .icon-wrapper .icon, .section-compare .icon-wrapper .icon-after::after, .section-compare .icon-wrapper .more:not(.icon-before)::after { display: inline; position: static; }
+.section-compare a.icon-wrapper { text-decoration: none; }
+.section-compare a.icon-wrapper:hover .icon-copy { text-decoration: underline; }
+.section-compare .icon-arkit::after, .section-compare .icon-arkit::before { content: ""; }
+.section-compare a.icon { text-decoration: none; }
+.section-compare a.icon:hover { text-decoration: underline; }
+.section-compare .viewport-content { margin-inline: auto; width: 980px; }
+@media (min-width: 1441px) { .section-compare .viewport-content { margin-inline: auto; width: 980px; } }
+@media (max-width: 1068px) { .section-compare .viewport-content { margin-inline: auto; width: 692px; } }
+@media (max-width: 734px) { .section-compare .viewport-content { margin-inline: auto; width: 87.5%; } }
+@media (max-width: 320px) { .section-compare .viewport-content { margin-inline: auto; width: 90%; } }
+.section-compare [data-pricing-product] { display: none; }
+.section-compare [data-pricing-product][data-pricing-loaded] { display: block; }
+@media (min-width: 735px) and (max-width: 1068px) { .section-compare .siri, .section-compare .spatial-audio { max-width: 168px; margin: 0px auto; } }
+.section-compare { padding-top: 100px; padding-bottom: 150px; }
+@media (max-width: 1068px) { .section-compare { padding-top: 75px; padding-bottom: 120px; } }
+@media (max-width: 734px) { .section-compare { padding-top: 105px; padding-bottom: 100px; } }
+.section-compare .typography-compare-section-headline { font-size: 64px; line-height: 1.0625; font-weight: 600; letter-spacing: -0.009em; font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+@media (max-width: 1068px) { .section-compare .typography-compare-section-headline { font-size: 64px; line-height: 1.0625; font-weight: 600; letter-spacing: -0.009em; font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; } }
+@media (max-width: 734px) { .section-compare .typography-compare-section-headline { font-size: 32px; line-height: 1.125; font-weight: 600; letter-spacing: 0.004em; font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; } }
+@media (min-width: 800px) { .section-compare .compare-module-wrapper .compare-grid .single-charge { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; } }
